@@ -1,3 +1,4 @@
+//Object
 const a={
     firstName:"Ankita",
     lastName:"Gusain",
@@ -15,4 +16,10 @@ for(let b in a)
 for(let b in a)
 {
     console.log(b,a[b]);//both
+}
+//Array can be iterate but not recommended to use on for in
+let arr=["Apple","mango","Banana","chips"];
+for(let b in arr)
+{
+    console.log(arr[b]);
 }

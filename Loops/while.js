@@ -45,3 +45,4 @@ else{
 else{
     console.log("it is not a prime number");
 }
+

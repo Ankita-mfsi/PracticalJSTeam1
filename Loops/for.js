@@ -27,6 +27,7 @@ num*=i;
 }
 console.log(num);
 
+
 //Pattern
 
 // 1 
@@ -76,3 +77,12 @@ for(let o=t-1;o!=0;o--)
     }
     console.log(y);
 }
+
+//Reverse a string
+let str="Ankita";
+let s=" ";
+for( let i=str.length-1; i>=0;i--)
+{
+s+=str[i];
+}
+console.log(s);
