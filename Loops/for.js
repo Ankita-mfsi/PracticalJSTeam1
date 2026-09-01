@@ -43,7 +43,7 @@ for(let i=1;i<=5;i++)
      let h=" ";// after complete execution of inner lookp h will be reset to blank
     for(let j=1;j<=i;j++)
     {
-        h+=j+" ";
+        h+="* ";
         
     }
     console.log(h);
@@ -57,7 +57,7 @@ for(let i=1;i<=5;i++)
 // * * *
 // * *
 // *
-let t=0;
+/*let t=0;
 for(let a=1;a<=7;a++)
 {
     let h="";
@@ -85,4 +85,4 @@ for( let i=str.length-1; i>=0;i--)
 {
 s+=str[i];
 }
-console.log(s);
+console.log(s);*/

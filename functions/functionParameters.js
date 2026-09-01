@@ -15,3 +15,10 @@ demo1();
 demo1("Test2");
 demo1(123);
 demo1(null);
+
+//addition
+function fun(a,b)
+{
+console(`addition of ${a} and ${b} is ${a+b}`);
+}
+fun(2,2);
