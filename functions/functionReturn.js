@@ -20,3 +20,4 @@ function demo1(arr)
 return arr;
 }
 console.log(demo1(2,3,4,5,6));//passing array as an argument and printing array via return keyword
+

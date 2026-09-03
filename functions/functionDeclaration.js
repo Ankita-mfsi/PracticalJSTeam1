@@ -48,3 +48,28 @@ function demo2(a,b)
 }
 
 demo1(demo2,2,2);// passing demo2 as an argument (higher order function)
+
+//with return type without arguments 
+function f1()
+{
+return `without argument`;
+}
+console.log(f1);
+
+//with return type with arguments 
+function f2(name)
+{
+    return `Hi this is ${name}`;
+}
+
+//without return type with arguments 
+function f3(name)
+{
+    console.log(`Hi this is ${name} from f3`);
+}
+
+//without return type without arguments
+function f4()
+{
+    console.log(`This is function has no return type and argument`);
+}
