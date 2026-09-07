@@ -55,14 +55,3 @@ account.withdraw(20000);//You don't have sufficent balance
 console.log(account.deposit(12000));//24000
 console.log(account.checkBalance());//24000
 
-//login function
-/*Employee Salary
-
-Create createEmployee(name, salary).
-Keep salary private.
-Create functions to increase salary and get the current salary.
-Example behavior:
-Employee: John
-Salary: 30000
-Increase: 5000
-New Salary: 35000 */
