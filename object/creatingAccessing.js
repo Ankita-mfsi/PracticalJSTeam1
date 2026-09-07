@@ -24,16 +24,16 @@ let obj3 = {
         country: "India",
         state: "UK"
     },
-    function: function() {
-        console.log("This is inside object");//This is inside object undefined
+    greet: function() {
+        console.log("Hi, This is inside object");//This is inside object undefined
     },
-    function1: function()
+    demo: function()
     {
-        return`Thsi is with return`;
+        return`This is with return`;
     } ,
-    function2: function(name)
+    greet1: function(name)
     {
-        return `hi I'm ${name}`;
+        return `Hi I'm ${name}`;
     },
     arr: [1,2,3,4,6]
 };
@@ -102,6 +102,12 @@ Object.assign(obj)
 
 //total marks
 let total=0;
+let student={
+    name:"Ankita",
+    math:65,
+    science:98,
+    english:76
+}
 for (let a in student)
 {
     if(a=="math"||a=="science"||a=="english")
@@ -110,3 +116,17 @@ for (let a in student)
     }
 }
 console.log(total);
+
+let person={
+    name:"Ankita",
+    age: 26
+}
+let address={
+    ...person,
+    state: "Uttarakhand",
+    district:"Dehradun"
+}
+console.log(address);
+
+let p={...person,...address};
+console.log(p)

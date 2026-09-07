@@ -27,8 +27,7 @@ console.log(str.substring(1,3));//nk
 // slice()-returns the part of string , it supports nevgative indexing
 console.log(str.slice(0));//Ankita
 console.log(str.slice(-6)); //Ankita
-// substr()-deprecated
-console.log(str.substr(1,3));
+
 
 // split()-convert string into Array
 console.log(str1.split(" "));
