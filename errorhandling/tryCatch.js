@@ -1,6 +1,7 @@
 
 try {
     console.log(x);
+  
 }
 catch (error) {
     console.log("Caught!"); //Caught! ReferenceError: x is not defined
