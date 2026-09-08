@@ -24,6 +24,11 @@ console.log(arr2);
 // return [a,b];// returns number as an array
 // }
 // console.log(demo("ankita","anku"));
+//nested array
+let arr1=[1,2,3,4,[5,6]];
+console.log(arr1);
+console.log(arr1[4][0]);
+
 
 function demo(a,b,c,d,e)
 {
@@ -45,6 +50,7 @@ let j=y;
 console.log(j);
 y.push(8);
 console.log(j);
+
 //merge array
 let array1=["apple","mango"];
 let array2=[1,2];
@@ -52,10 +58,6 @@ let arr3=[];
 arr3=[...array1,...array2];
 console.log(arr3);
 
-//nested array
-let arr1=[1,2,3,4,[5,6]];
-console.log(arr1);
-console.log(arr1[4][0]);
 
 
 
