@@ -1,6 +1,6 @@
 
 try {
-    console.log(x);
+    console.log(y);
   
 }
 catch (error) {
@@ -73,3 +73,6 @@ try {
 }
 catch (err) {
     console.log("hi", err);}
+
+
+    
