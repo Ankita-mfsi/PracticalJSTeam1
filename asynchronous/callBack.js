@@ -12,4 +12,4 @@ return a+b;
 let result=cal(2,3,sum);
 console.log(result);
 
-//callback hell
+
