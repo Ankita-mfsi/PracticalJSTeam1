@@ -73,3 +73,22 @@ function f4()
 {
     console.log(`This is function has no return type and argument`);
 }
+
+//This is execute the latest function
+function greet(callback, name) {
+    return callback(name);
+}
+function greetName(name) {
+    return `Hi this is ${name}`;
+
+}
+console.log(greet(greetName, "Ankita"));
+
+function greet(callback) {
+   callback();
+}
+function greetName() {
+    console.log(`callback without return type without arguments `);
+
+}
+greet(greetName);

@@ -6,7 +6,8 @@ let number = 10;
 
 try
 {
-console.log("Mltiple try");  //syntaxError: Missing catch or finally after try
+let number = 10;
+    number.toUpperCase(); //syntaxError: Missing catch or finally after try
 }
 
 catch(error) 
