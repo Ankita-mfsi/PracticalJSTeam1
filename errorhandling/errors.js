@@ -1,28 +1,67 @@
 //syntax Error
-console.log("hi" //SyntaxError: missing ) after argument list
+//console.log("hi"  //SyntaxError: missing ) after argument list
 
 //ReferenceError
-console.log(a);//ReferenceError: a is not defined
+try {
+    console.log(a);
+}
+catch (error) {
+    //ReferenceError: a is not defined
+}
+
 
 //TypeError- Occurs when an operation is performed on a value of an inappropriate type.
-let a = 10;
-a(); //TypeError: a is not a function
+try {
+    let b = 10;
+    a();
+}
+catch (error) {
+    console.log(error);//TypeError: a is not a function
+}
 
-const a = 10;
-a = 20;
-console.log(a); //TypeError: Assignment to constant variable.
+try {
+    const c = 10;
+    a = 20;
+    console.log(a);
+}
+catch (error) {
+    console.log(error);//TypeError: Assignment to constant variable.
+}
+try {
 
-const a = "ankita";
-a.push(null);//TypeError: a.push is not a function
+    const d = "ankita";
+    a.push(null);
+}
+catch (error) {
+    console.log(error);//TypeError: a.push is not a function
+}
+try {
 
-let user = null;
-const { name } = user; //TypeError: Cannot destructure property 'name' of 'user' as it is null.
 
-//RangeError
-let arr = new Array(-1); //RangeError: Invalid array length
+    let user = null;
+    const { name } = user;
+}
+catch (error) {
+    console.log(error);//TypeError: Cannot destructure property 'name' of 'user' as it is null.
+}
+try {
+    //RangeError
+    let arr = new Array(-1);
+}
+catch (error) {
+    console.log(error);
+}
 
-function test() {
+
+try {
+    function test() {
+        test();
+    }
     test();
 }
 
-test(); //RangeError: Maximum call stack size exceeded
+catch (error) {
+    console.log(error); //RangeError: Maximum call stack size exceeded
+}
+//change vraible name
+// add try and catch
