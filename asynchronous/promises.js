@@ -86,10 +86,18 @@ const f2 = (() => {
 });
 
 console.log("...Fetching data...");
+// f1().then((res) => {
+//     console.log(res);
+//     f2().then((res) => {
+//         console.log(res);
+//     });
+
+// });
+
 f1().then((res) => {
     console.log(res);
-    f2().then((res) => {
-        console.log(res);
-    });
-
+    return f2();
+}).then((res)=> 
+{
+console.log(res);
 });
