@@ -112,3 +112,8 @@ async function testChainCall() {
 
 }
 testChainCall();
+//multiple async await -done
+//async  await independently work? -done
+//async and await if not written what will be the order of execution 
+//drawbacks of promise and callback , why we use promise,  why we use callback and why we use async await
+//array mai drawback? set and maps use q krte hai? real time example of set and maps
