@@ -4,6 +4,8 @@
 
  let arr = [10, 20, 2, 3, 6, 76, 11, 12, 98]
 //const arrFilter=arr.filter((arr)=>arr>10&&arr<70); //[ 20, 11, 12 ]
+
+//value more than 10 and smaller than 70
 const arrFilter = arr.filter((ar) => { 
     
     return ar > 10 && ar < 70 });
