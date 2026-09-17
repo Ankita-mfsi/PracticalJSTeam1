@@ -27,11 +27,10 @@ async function greetSecondCall()
     console.log(a);
 }
 greetSecondCall();
+//Double async- SyntaxError: Unexpected token 'async'
 
-//Individual await only await no aync
 
-
-//Individual await only await no aync
+//Individual  await no aync
 // function greetCall() 
 // {
 //     let a=await greet();//SyntaxError: await is only valid in async functions and the top level bodies of modules
@@ -39,3 +38,12 @@ greetSecondCall();
 // }
 // greetCall();
 //what is top module?
+
+/*function greetCallOne() 
+{
+    let a= await await greet();
+greetCallOne();
+
+}
+
+greetCallOne() ;*/

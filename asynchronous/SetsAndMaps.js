@@ -99,7 +99,6 @@ object is not directly iterable via for of
 object does not have size method
 Object key can be string or symbol but map key can be any dataype
 Keys are not well ordered[diff. bhevaiour for number key and string key]	Keys are ordered by insertion
-Have default keys	Do not have default keys- not understandable
 */
 let id = Symbol("id");
 let person = {
