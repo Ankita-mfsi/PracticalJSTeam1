@@ -61,3 +61,36 @@ genTest.next();//Nothing will be printed
 genTest.next();//Nothing will be printed
 console.log(genTest.next());//yield will be printed value: undefined, done:true
 console.log(genTest.next().value);//it will print the value undefined
+
+//DATE
+//get any month from current month
+let input = require("readline-sync");
+let monthNum=Number(input.question("Enter the month from the current month"));
+let date=new Date();
+let months=["January","Febuary","March","April","May","June","July","August","September","October","November","December"];
+function* date1(date,monthNum)
+{
+  date.setMonth(date.getMonth()+monthNum);
+  yield date;
+}
+let genDate=date1(date,monthNum);
+let a=months[(genDate.next().value.getMonth())];
+console.log(a);
+
+//Find Date after 3 months later from current date
+function* year(date)
+{
+  date.setFullYear(date.getFullYear()+6);
+  yield date;
+}
+let genYear=year(date);
+console.log(genYear.next().value.getFullYear());
+
+//Random date
+function* randomDate(date)
+{
+ date.setDate(Math.floor(Math.random()*30)+1);
+  yield date;
+}
+let genrandomDate=randomDate(date);
+console.log(genrandomDate.next().value);
