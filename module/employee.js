@@ -8,3 +8,4 @@ export class Emp extends Place{
         console.log("Exported single vairable",a);
     }
 }
+//makemytrip- meaningful

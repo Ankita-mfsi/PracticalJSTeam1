@@ -42,3 +42,5 @@ class student {
 let s=new student("Ankita",26);
 s.studentName();
 s.studentAge();
+
+//static this and finally super

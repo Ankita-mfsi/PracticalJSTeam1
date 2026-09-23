@@ -1,0 +1,70 @@
+Makemytrip.com
+
+----------------------
+#showBizUpgradePopup
+--------------
+.class
+.menu_Flights
+
+tagname.class
+li.menu_Flights
+
+tagname[attribute='value']
+li[class='menu_Flights']
+
+.class.class.class[if spaces]
+.menu_Holidays.removeItemMargin
+------------------------------------------
+tagname[attribute='value']
+span[aria-label='Wishlist']
+
+attribute['value']
+[aria-label='Wishlist']
+
+tagname[attribute]
+span[aria-label]
+
+[attribute]
+[aria-label]
+
+-------------------------
+Combinator
++Adjacent sibling -Selects the element that comes immediately after first element.
+It will exclude the first element
+firstElement+sibiling
+.menu_Flights+li
+
+~ General/All sibiling -Selects all matching siblings that come after the first element.
+It will exclude the first element
+firstElement+sibiling
+.menu_Flights~li
+
+>parent to child
+p>[class$='SearchBtn ']
+-------------------------------------------
+Partial locator
+^ starting
+[attribute^='value']
+div[class^='socialMediaLinks']
+
+* middle
+[attribute*='value']
+div[class*='MediaLinks']
+
+$ last
+[attribute$='value']
+span[class$='myTripsIcon']
+
+------------------------------------
+userInput
+let icon="instagramIcon";
+(`span[class^='${icon}']`)
+
+-------console-----
+let icon = "instagramIcon";
+let element = document.querySelector(`span[class^='${icon}']`);
+console.log(element);
+
+-----------------
+https://www.screener.in/screens/775137/dynamic-stocks/
+tr:nth-child(6) td:nth-of-type(12)
