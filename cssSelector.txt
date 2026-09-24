@@ -41,6 +41,8 @@ firstElement+sibiling
 
 >parent to child
 p>[class$='SearchBtn ']
+
+parent child child - to do
 -------------------------------------------
 Partial locator
 ^ starting
@@ -67,4 +69,14 @@ console.log(element);
 
 -----------------
 https://www.screener.in/screens/775137/dynamic-stocks/
-tr:nth-child(6) td:nth-of-type(12)
+tr:nth-child(6) td:nth-of-type(12) - todo href company
+
+--------------
+pagination
+
+let pageNumber=2;
+let pagination=document.querySelector(`a[href$='page=${pageNumber}'][class*='i2eZXn']);
+console.log(pagination);
+
+previous and next 
+a[class='jgg0SZ']
