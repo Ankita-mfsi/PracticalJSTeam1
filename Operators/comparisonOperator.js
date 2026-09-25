@@ -19,7 +19,7 @@ console.log(10==="10");//f
 console.log(a>b);//t
 console.log("80">7);//t
 console.log("78">9n);//t integer is the number and bigint is not
-console.log("null"==null);
+console.log("null"==null);//f
 console.log()
 
 //lessThan
