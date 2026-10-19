@@ -9,13 +9,6 @@ console.log(Number("0")); // 0
 console.log(Number("")); // 0
 console.log(Number("hello"));// NaN
 
-//toLocaleString-convert number to string
-let num = 29;
-let s = num.toLocaleString();
-console.log(typeof s);//String
-
-let num1=98.7;
-console.log(typeof num1.toLocaleString());//string
 
 //to array
 let str1="Ankita";
